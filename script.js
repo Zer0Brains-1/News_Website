@@ -16,10 +16,10 @@ function bindData(q){
  const ma=document.getElementById("cadcon");
  const tem=document.getElementById("tmx");
  ma.innerHTML="";
- q.forEach((q)=>{
-    if(q.urlToImage==null) return;
+ q.forEach((l)=>{
+    if(l.urlToImage==null) return;
     const clone= tem.content.cloneNode(true);
-    filldata(clone,q);
+    filldata(clone,l);
 ma.appendChild(clone);
  });
   a();
