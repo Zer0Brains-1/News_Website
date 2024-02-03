@@ -9,7 +9,6 @@ fetchNews("India");
 async function fetchNews(query){
 const raw = await fetch(`${url}${query}&apiKey=${API_KEY}`);
 const data= await raw.json();
-console.log(data.articles.length);
 bindData(data.articles);
 }
 
